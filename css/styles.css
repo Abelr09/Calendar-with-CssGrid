@@ -1,0 +1,109 @@
+
+body{
+    background:#e2e2e2;
+}
+.months{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+width: 100%;
+height: auto;
+}
+.calendar{
+text-align: center;
+width: 300px;
+}
+.list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+    border: 1px solid black;
+ 
+}
+.list .sun{
+    color: red;
+}
+.january{
+    grid-column-start: 7;
+}
+.February{
+    grid-column-start: 3;
+}
+.March{
+    grid-column-start: 3;
+}
+.April{
+    grid-column-start: 6;
+}
+.May{
+    grid-column-start: 1;
+}
+.June{
+    grid-column-start: 4;
+}
+.July{
+    grid-column-start: 6;
+}
+.August{
+    grid-column-start: 2;
+}
+.September{
+    grid-column-start: 5;
+}
+.October{
+    grid-column-start: 7;
+}
+.November{
+    grid-column-start: 3;
+}
+.December{
+    grid-column-start: 5;
+}
+
+.day{
+    background: #b8ada6;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    text-decoration: none;
+    
+}
+li{
+    text-align: center;
+    text-decoration: underline;
+
+}
+h1{
+    text-align: center;
+    background:	#0a0803;
+    color: #fff;
+    text-shadow: -4px 3px 0 grey, -2px 2px 0 #717a7d;
+
+}
+h2{
+    background:	#0a0803;
+    color: #fff;
+    text-shadow: -2px 2px 0 #717a7d, -1px 1px 0 grey;
+
+    border: 1px solid black;
+    position:relative;
+    bottom: -11%;
+
+}
+div{
+    padding: 1rem;
+}
+@media (max-width: 1344px) {
+    .months{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+    }
+}
+@media (max-width: 967px){
+    .months{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
